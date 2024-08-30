@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav li {
+  list-style: none;
+}
+.nav a {
+  text-decoration: none;
+  color: white
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8vh;
+  background: #20a820;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+.nav__brand {
+  font-size: 1.8rem;
+  margin: 71px;
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  margin: 40px;
+  font-size: 1.1rem;
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+/* Active Class */
+.nav__active {
+  transform: translateX(0%);
+}
